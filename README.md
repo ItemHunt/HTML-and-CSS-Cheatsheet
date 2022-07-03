@@ -1,4 +1,4 @@
-# C++ Cheatsheet
+# HTML and CSS Cheatsheet
 
 ## Introduction
 The HTML and CSS Cheatsheet repository is a place where you can view a cheatsheet for HTML and CSS, languages used to create and design websites or webpages. You can also find useful pieces of information here (especially for beginners) and learning resources which are related to HTML and CSS in one way or another. This repository is a mini-project for a much bigger project called the [*Learning-Hub Project*.](https://github.com/ItemHunt/Learning-Hub) 
@@ -18,7 +18,7 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 
 ## HTML Cheatsheet
 ### Text
-- **``<p> text </p>``** - Paragraph tag used for the textual content of a webpage
+- ``<p> text </p>`` - Paragraph tag used for the textual content of a webpage
 - **``<h1> text </h1>`` -** H1 tag used as the main overall title of the webpage
 - **``<h2> text </h2>`` -** H2 tag, a subtopic title to the H1 tag
 - **``<h3> text </h3>`` -** H3 tag, a subtopic title to the H2 tag
