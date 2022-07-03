@@ -18,13 +18,24 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 
 ## HTML Cheatsheet
 ### Text
-- ``<p> text </p>`` - Paragraph tag used for the textual content of a webpage
-- **``<h1> text </h1>`` -** H1 tag used as the main overall title of the webpage
-- **``<h2> text </h2>`` -** H2 tag, a subtopic title to the H1 tag
-- **``<h3> text </h3>`` -** H3 tag, a subtopic title to the H2 tag
-- **``<h4> text </h4>`` -** H4 tag, a subtopic title to the H3 tag 
-- **``<h5> text </h5>`` -** H5 tag, a subtopic title to the H4 tag
-- **``<h6> text </h6>`` -** H6 tag, a subtopic title to the H5 tag
+- **``<p> text </p>`` -**  *Paragraph* tag used for the textual content of a webpage
+- **``<h1> text </h1>`` -** *H1 tag* used as the main overall title of the webpage
+- **``<h2> text </h2>`` -** *H2 tag*, a subtopic title to the H1 tag
+- **``<h3> text </h3>`` -** *H3 tag*, a subtopic title to the H2 tag
+- **``<h4> text </h4>`` -** *H4 tag*, a subtopic title to the H3 tag 
+- **``<h5> text </h5>`` -** *H5 tag*, a subtopic title to the H4 tag
+- **``<h6> text </h6>`` -** *H6 tag*, a subtopic title to the H5 tag
+- **``<ul> <li> bullet </li> </ul>`` -** *ul tag*, used to create an unordered list. The *li tag* in this context is considered as one bullet point
+- **``<ol> <li> bullet </li> </ol>`` -** *ol tag*, used to create an ordered list. The *li tag* in this context is considered as a number that is a part of an order
+
+### Linking 
+- **``<a href = "url of a website or hash (#) for dead link"> media in hyperlink form </a>`` -** Turns anything between the *a tags* into a external link
+- **``<a href = "#ID or segment"> media in hyperlink form </a>`` -** Turns anything between the *a tags* into an internal link leading to a specific part of the webpage
+- **``target = "_blank"`` -** Property of the *a tag*, used to make external links open up a new browser tab first before heading to target website
+
+### Media Display 
+- **``<img src = "url of image">`` -** Used to add images
+- **``alt = "textual alternative to image"`` -** Used as a property of *img*, displays given text if the image being sourced is unavailble or not in use
 
 ### Webpage Structures
 - **``<head> head </head>`` -** Structure that defines the head of the webpage
@@ -39,12 +50,29 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``<div> text </div>`` -** Structure that defines a division in the webpage
 - **``<style> text </style>`` -** 
  Structure that defines a section of the website containing all CSS data, it is located at the very top of the webpage code
+- **``<code> code </code>`` -** Structure that defines an area meant for code
+- **``<form> form </form>`` -** Structure that defines an area meant for form or questionarrie related content
+
+### Form Codes
+- **``action = "url to send data to"`` -** Property of the *form tag*, used to have the form send user input to a specific url after form submission
+- **``<button type = "submit"> Text </button>`` -** Used to create a button that allows users to send their input to the url specified by the *action property* upon form completion
+- **``<input type = "text">`` -** Used to create an input box that accepts textual input
+- **``placeholder = "text"`` -** Property of the *input tag*, used to display placeholder text
+- **``required`` -** Property of the *input tag*, used to make the user provide an answer to a specific *input tag or question* in order to complete the form
 
 ### Useful Codes
-- **``<!-- comment -->`` -** use to create a comment block
+- **``<!-- comment -->`` -** Used to create a *comment block*
+- **``<br>`` -** *Break*, used to move on to the next line
+
+### Others
+- **``<!DOCTYPE ...>`` -** HTML5 Website Version Identifier
+- **``<!DOCTYPE html>`` -** Old HTML Website Version Identifier
 
 
+## CSS Cheatsheet
 
 ## Additional Information For HTML and CSS
+- You can put some of the codes within a code, this is called *nesting*. An example is putting *a tags* between or inside of *paragraph tags*
+
 
 ## Learning Resources List
