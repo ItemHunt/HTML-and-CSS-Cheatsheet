@@ -111,6 +111,7 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - A Class is like a blueprint to create an object that you want to make
 - The style tags are only used if you want to code in some CSS into a HTML file. You don't need style tags if you are coding CSS elements into a CSS file. You can still add CSS elements to an HTML file even if the HTML and CSS stuff are in separate files.
 - Usually, CSS elements at the bottom takes priority over CSS elements above
+- 
 
 ## Learning Resources List
 - Legacy (old) FCC Responsive Web Design Course that gives you a certificate and a chance to have stuff you can add to your portfolio (website) https://www.freecodecamp.org/learn/responsive-web-design/
