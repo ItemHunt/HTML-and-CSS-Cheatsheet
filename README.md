@@ -12,6 +12,13 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 
 ## Table of Contents
 ### HTML Cheatsheet
+- [Text](https://github.com/ItemHunt/HTML-and-CSS-Cheatsheet#text)
+- [Linking](https://github.com/ItemHunt/HTML-and-CSS-Cheatsheet#linking)
+- [Media Display](https://github.com/ItemHunt/HTML-and-CSS-Cheatsheet#media-display)
+- [Webpage Structures](https://github.com/ItemHunt/HTML-and-CSS-Cheatsheet#webpage-structures)
+- [Form Codes](https://github.com/ItemHunt/HTML-and-CSS-Cheatsheet#form-codes)
+- [Useful Codes](https://github.com/ItemHunt/HTML-and-CSS-Cheatsheet#useful-codes)
+- [Others](https://github.com/ItemHunt/HTML-and-CSS-Cheatsheet#others)
 
 ### CSS Cheatsheet
 
@@ -36,6 +43,7 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 ### Media Display 
 - **``<img src = "url of image">`` -** Used to add images
 - **``alt = "textual alternative to image"`` -** Used as a property of *img*, displays given text if the image being sourced is unavailble or not in use
+- **``<audio controls> <source = "url of audio" type = "format of audio"> </audio>`` -** Used to add audio that can be controlled
 
 ### Webpage Structures
 - **``<head> head </head>`` -** Structure that defines the head of the webpage
@@ -52,11 +60,18 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
  Structure that defines a section of the website containing all CSS data, it is located at the very top of the webpage code
 - **``<code> code </code>`` -** Structure that defines an area meant for code
 - **``<form> form </form>`` -** Structure that defines an area meant for form or questionarrie related content
+- **``<label for = "ID of radio/checbox input type"> radi/checkbox choice </label>`` -** Used as a container for input type radio and checkbox, used within the form tags, and used to create text for the radio/checkbox choice
 
 ### Form Codes
 - **``action = "url to send data to"`` -** Property of the *form tag*, used to have the form send user input to a specific url after form submission
 - **``<button type = "submit"> Text </button>`` -** Used to create a button that allows users to send their input to the url specified by the *action property* upon form completion
 - **``<input type = "text">`` -** Used to create an input box that accepts textual input
+- **``<input type = "date">`` -** Used to create an input box that gets the user to pick a date
+- **``<input type = "email">`` -** Used to create an input box that gets the user to input a valid email
+- **``<input type = "radio">`` -** Used to create a multiple choice style question 
+- **``name = "radio/checkbox name"`` -** Used as a property of the radio and checkbox input type to connect choices to a singular question
+- **``value = "value of a non-text input type"`` -** Used as a property of everything except the text input type, value means that if the user inputs a specific choice like male for example, value should equal male. 
+- **``checked`` -** Used as a property of radio/checkbox input type, allows the the specific input tag to be checked by default
 - **``placeholder = "text"`` -** Property of the *input tag*, used to display placeholder text
 - **``required`` -** Property of the *input tag*, used to make the user provide an answer to a specific *input tag or question* in order to complete the form
 
@@ -67,7 +82,6 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 ### Others
 - **``<!DOCTYPE ...>`` -** HTML5 Website Version Identifier
 - **``<!DOCTYPE html>`` -** Old HTML Website Version Identifier
-
 
 ## CSS Cheatsheet
 
