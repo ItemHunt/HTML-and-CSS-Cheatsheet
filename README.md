@@ -78,15 +78,40 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 ### Useful Codes
 - **``<!-- comment -->`` -** Used to create a *comment block*
 - **``<br>`` -** *Break*, used to move on to the next line
+- **``id = "ID"`` -** *ID*, a property of almost every tag in HTML, used to link things together and add identifiers to the different parts of the webpage.
 
 ### Others
 - **``<!DOCTYPE ...>`` -** HTML5 Website Version Identifier
 - **``<!DOCTYPE html>`` -** Old HTML Website Version Identifier
 
 ## CSS Cheatsheet
+### Essentials
+- **``HTML_Structure { CSS Properties }`` -** Allows you to add CSS properties over all of the specified HTML Structure
+- **``.class_name { CSS Properties }`` -** Allows you to create classes that can be used to add CSS elements to HTML elements that have the class
+
+### CSS Properties
+- **``background-color: color;`` -** Used to set the background color of something, it accepts general color names, RGB, hex codes, etc.
+- **``background: color;`` -** Used to set the background color of something, it accepts general color names, RGB, hex codes, etc.
+- **``color: color;`` -** Used to set the color of something, it accepts general color names, RGB, hex codes, etc.
+- **``font-family: font_family_name;`` -** Used to set the font family of text
+- **``text-align: alignment`` -** Used to align things
+
+### Text Properties
+- **``<bold> text tags </bold>`` -** Used in the HTML file, makes text tags turn into bold characters
+- **``<strong> text tags </strong>`` -** Used in the HTML file, makes text tags turn into strong characters
+- **``<s> text tags </s>`` -** Used in the HTML file, makes text tags turn into strikethrough characters
+- **``<u> text tags </u>`` -** Used in the HTML file, makes text tags turn into underlined characters
+- **``<em> text tags </em>`` -** Used in the HTML file, makes text tags turn into italic characters
+
+### Useful Codes
+- **``property: value !important;`` -** *!important*, allows a property to override all other properties
 
 ## Additional Information For HTML and CSS
 - You can put some of the codes within a code, this is called *nesting*. An example is putting *a tags* between or inside of *paragraph tags*
-
+- A Class is like a blueprint to create an object that you want to make
+- The style tags are only used if you want to code in some CSS into a HTML file. You don't need style tags if you are coding CSS elements into a CSS file. You can still add CSS elements to an HTML file even if the HTML and CSS stuff are in separate files.
+- Usually, CSS elements at the bottom takes priority over CSS elements above
 
 ## Learning Resources List
+- Legacy (old) FCC Responsive Web Design Course that gives you a certificate and a chance to have stuff you can add to your portfolio (website) https://www.freecodecamp.org/learn/responsive-web-design/
+- New FCC Responsive Web Design Course that gives you a certificate and a chance to have stuff you can add to your portfolio (website) https://www.freecodecamp.org/learn/2022/responsive-web-design/
