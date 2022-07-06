@@ -79,6 +79,7 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``<!-- comment -->`` -** Used to create a *comment block*
 - **``<br>`` -** *Break*, used to move on to the next line
 - **``id = "ID"`` -** *ID*, a property of almost every tag in HTML, used to link things together and add identifiers to the different parts of the webpage.
+- **``class = "class1 class2 ..."`` -** *class*, a property of almost every tag in HTML, used to add CSS elements from CSS class/es. Multiple classes are separated by spacing
 
 ### Others
 - **``<!DOCTYPE ...>`` -** HTML5 Website Version Identifier
@@ -90,11 +91,24 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``.class_name { CSS Properties }`` -** Allows you to create classes that can be used to add CSS elements to HTML elements that have the class
 
 ### CSS Properties
-- **``background-color: color;`` -** Used to set the background color of something, it accepts general color names, RGB, hex codes, etc.
-- **``background: color;`` -** Used to set the background color of something, it accepts general color names, RGB, hex codes, etc.
-- **``color: color;`` -** Used to set the color of something, it accepts general color names, RGB, hex codes, etc.
+- **``background-color: color;`` -** Used to set the background color of something, it accepts general color names, RGB, hex codes, RGBA, etc.
+- **``background: color;`` -** Used to set the background color of something, it accepts general color names, RGB, hex codes, RGBA, etc.
+- **``color: color;`` -** Used to set the color of something, it accepts general color names, RGB, hex codes, RGBA, etc.
+- **``opacity: value;`` -** Used to adjust the opacity of things
 - **``font-family: font_family_name;`` -** Used to set the font family of text
-- **``text-align: alignment`` -** Used to align things
+- **``font-size: value;`` -** Used to change the font size. Values that can be used include px, percentage, etc.
+- **``font-weight: value;`` -** Used to adjust the thickness of text, the acceptable values here are just plain numbers
+- **``text-align: alignment;`` -** Used to align things
+- **``line-height: value;`` -** Used to adjust line spacing, acceptable values include px, percentage, etc.
+- **``text-transform: value;`` -** Used to transform text to any of the following: lowercase, uppercase, capitalize, initial, inherit, and none.
+- **``position: static;`` -** Default position value for all elements. They appear according to the order seen in the code.
+- **``position: relative;`` -** Used to make the position of specific elements relative to itself. Meaning, the movement of elements affected by this position property does not affect the position of other elements
+- **``position: absolute;`` -** Used to make the position of specific elements relative to its first positioned parent element. If there is no first positioned parent element, then it will be relative to the HTML element or page itself
+- **``position: fixed;`` -** Used to make the position of specific elements related to the browser window
+- **``position: sticky;`` -** Used to make the position of specific elements related to the user's scroll position
+- **``direction: value;`` -** Used after using either relative or absolute position CSS element. Direction should be replaced with one of the following: right, left, top, bottom. Value should be in px, percentage, etc.
+- **``float: value;`` -** Used to make something float to either the right, left, or none.
+
 
 ### Text Properties
 - **``<bold> text tags </bold>`` -** Used in the HTML file, makes text tags turn into bold characters
@@ -102,6 +116,13 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``<s> text tags </s>`` -** Used in the HTML file, makes text tags turn into strikethrough characters
 - **``<u> text tags </u>`` -** Used in the HTML file, makes text tags turn into underlined characters
 - **``<em> text tags </em>`` -** Used in the HTML file, makes text tags turn into italic characters
+
+### Other Size/Placement Properties for CSS Elements
+- **``#vw`` -** *vw* stands for *viewport width* and the number you give it will always be seen as a percent value. Sets a CSS element to x% of the viewport width.
+- **``#vh`` -** *vh* stands for *viewport height* and the number you give it will always be seen as a percent value. Sets a CSS element to x% of the viewport height.
+- **``#vmin`` -** *vmin* stands for *viewport mininum* and the number you give it will always be seen as a percent value. Sets a CSS element to x% of the viewport's smaller dimension.
+- **``#vmax`` -** *vmax* stands for *viewport maximum* and the number you give it will always be seen as a percent value. Sets a CSS element to x% of the viewport's bigger dimension.
+
 
 ### Useful Codes
 - **``property: value !important;`` -** *!important*, allows a property to override all other properties
