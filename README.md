@@ -56,7 +56,7 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``<article> independent section </article>`` -** Structure that defines an independent section of content that doesn't rely on other parts of the webpage
 - **``<footer> footer </footer>`` -** Structure that defines the footer of the webpage
 - **``<div> text </div>`` -** Structure that defines a division in the webpage
-- **``<style> text </style>`` -** 
+- **``<style> CSS </style>`` -** 
  Structure that defines a section of the website containing all CSS data, it is located at the very top of the webpage code
 - **``<code> code </code>`` -** Structure that defines an area meant for code
 - **``<form> form </form>`` -** Structure that defines an area meant for form or questionarrie related content
@@ -89,25 +89,51 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 ### Essentials
 - **``HTML_Structure { CSS Properties }`` -** Allows you to add CSS properties over all of the specified HTML Structure
 - **``.class_name { CSS Properties }`` -** Allows you to create classes that can be used to add CSS elements to HTML elements that have the class
+- **``@import 'font-style-copypasted-information';`` -** *@import* is used to get font styles from an external source within a CSS file. Usually contains a straight up *url* and a *rel tag*
+- **``<link 'font-style-copypasted-information'>`` -** *link* is used to get font styles from an external source within a HTML file *style tag* section. Usually contains an *href and rel tag*.
 
 ### CSS Properties
+- **``background: url("actual url");`` -** Used to set the background to contain an image from an external source
 - **``background-color: color;`` -** Used to set the background color of something, it accepts general color names, RGB, hex codes, RGBA, etc.
 - **``background: color;`` -** Used to set the background color of something, it accepts general color names, RGB, hex codes, RGBA, etc.
-- **``color: color;`` -** Used to set the color of something, it accepts general color names, RGB, hex codes, RGBA, etc.
+- **``background: linear-gradient(gradient direction value, color 1, color 2, ...color N);`` -** Used to create a linear gradient color. Direction accepts values in degrees. For color, you can use any amount and it accepts values like general color names, RGB(R, G, B), hex codes, RGBA(R, G, B, A), etc.
+- **``color: color;`` -** Used to set the color of something, it accepts general color names, RGB(R, G, B), hex codes, RGBA(R, G, B, A), etc.
+- **``hsl(value, value, value);`` -** Used to set an element's hue, saturation and lightness. Uses percentage as values.
 - **``opacity: value;`` -** Used to adjust the opacity of things
 - **``font-family: font_family_name;`` -** Used to set the font family of text
-- **``font-size: value;`` -** Used to change the font size. Values that can be used include px, percentage, etc.
+- **``font-size: value;`` -** Used to change the font size. Values that can be used include px, percentage, cm, mm, in etc.
 - **``font-weight: value;`` -** Used to adjust the thickness of text, the acceptable values here are just plain numbers
 - **``text-align: alignment;`` -** Used to align things
-- **``line-height: value;`` -** Used to adjust line spacing, acceptable values include px, percentage, etc.
+- **``line-height: value;`` -** Used to adjust line spacing, acceptable values include px, percentage, cm, mm, in etc.
 - **``text-transform: value;`` -** Used to transform text to any of the following: lowercase, uppercase, capitalize, initial, inherit, and none.
 - **``position: static;`` -** Default position value for all elements. They appear according to the order seen in the code.
 - **``position: relative;`` -** Used to make the position of specific elements relative to itself. Meaning, the movement of elements affected by this position property does not affect the position of other elements
 - **``position: absolute;`` -** Used to make the position of specific elements relative to its first positioned parent element. If there is no first positioned parent element, then it will be relative to the HTML element or page itself
 - **``position: fixed;`` -** Used to make the position of specific elements related to the browser window
 - **``position: sticky;`` -** Used to make the position of specific elements related to the user's scroll position
-- **``direction: value;`` -** Used after using either relative or absolute position CSS element. Direction should be replaced with one of the following: right, left, top, bottom. Value should be in px, percentage, etc.
+- **``direction: value;`` -** Used after using either relative or absolute position CSS element. Direction should be replaced with one of the following: right, left, top, bottom. Value should be in px, percentage, cm, mm, in etc.
+- **``z-index: value;`` -** Used to change the stack position of an element affected by any of the position types from relative to sticky. Accepts any form of integer
 - **``float: value;`` -** Used to make something float to either the right, left, or none.
+- **``width: value;`` -** Used to adjust the width of an element
+- **``length: value;`` -** Used to adjust the length of an element
+- **``border-color: color;`` -** Used to set the border color of an element. It accepts it accepts general color names, RGB, hex codes, RGBA, etc.
+- **``border-width: value;`` -** Used to set the border width of an element. Values that can be used include px, percentage, cm, mm, in etc.
+- **``border-style: value;`` -** Used to set the border style of an element. Acceptable values include none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset. Multiple values can be used, they are separated by spaces. 
+- **``border-radius: value;`` -** Used to make an element's border more round. Values that can be used include px, percentage, cm, mm, in etc.
+- **``margin-direction: value;`` -** Direction can be top, right, left, and bottom. Values that can be used include px, percentage, cm, mm, in etc.
+- **``margin: value1 value2 value3 value4;`` -** Value1 is top direction and value4 is left direction. Direction operates in a clockwise system. Values that can be used include px, percentage, cm, mm, in etc.
+- **``padding-direction: value;`` -** Direction can be top, right, left, and bottom. Values that can be used include px, percentage, cm, mm, in etc.
+- **``padding: value;`` -** All directions padding. Values that can be used include px, percentage, cm, mm, in etc.
+
+- **``visibility: hidden;`` -** Hides an element
+- **``display: none;`` -** Hides an element
+
+- **``animation-name: name;`` -** Used to set the name of an animation you are about to make
+- **``animation-duration: time;`` -**  Used to set the duration of the animation you are making. It accepts seconds (s) and milliseconds (ms) as values for time.
+- **``animation-fill-mode: forwards;`` -** Used to ensure that the changes the animation made to your element remains permanent even after the animation duration is complete
+- **``animation-iteration-count: number of iterations;`` -** Used to set the amount of times the animation will play. You can set the amount of times to infinite
+- **``animation-timing-function: value;`` -** Used to configure the animation's style or movement speed(acceptable values include the ff: linear, ease, ease out, and ease in)
+- **``animation-timing-function: cubic-bezier(x1, y1, x2, y2);`` -** Used to gain greater control over the configuration of the animation's style or movement speed 
 
 
 ### Text Properties
@@ -125,15 +151,19 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 
 
 ### Useful Codes
-- **``property: value !important;`` -** *!important*, allows a property to override all other properties
+- **``CSS property: value !important;`` -** *!important*, allows a property to override all other properties
+- **``@keyframes animation_name { 0% { CSS Elements } 100% { CSS Elements } }`` -** Used to add the actual animation to an already existing animation name. Multiple change points are allowed (e.g. 50%, 25%, etc)
+- **``CSS property: var(variable_name, value);`` -** Used to create a variable
 
 ## Additional Information For HTML and CSS
 - You can put some of the codes within a code, this is called *nesting*. An example is putting *a tags* between or inside of *paragraph tags*
 - A Class is like a blueprint to create an object that you want to make
 - The style tags are only used if you want to code in some CSS into a HTML file. You don't need style tags if you are coding CSS elements into a CSS file. You can still add CSS elements to an HTML file even if the HTML and CSS stuff are in separate files.
 - Usually, CSS elements at the bottom takes priority over CSS elements above
-- 
+- You can get a variety of different font styles from this website: https://fonts.google.com/
 
 ## Learning Resources List
 - Legacy (old) FCC Responsive Web Design Course that gives you a certificate and a chance to have stuff you can add to your portfolio (website) https://www.freecodecamp.org/learn/responsive-web-design/
 - New FCC Responsive Web Design Course that gives you a certificate and a chance to have stuff you can add to your portfolio (website) https://www.freecodecamp.org/learn/2022/responsive-web-design/
+- CSS From Zero to Hero (video) https://www.youtube.com/watch?v=1Rs2ND1ryYc
+- FCC HTML5 and CSS3 Full Course From Scratch (video) https://www.youtube.com/watch?v=mU6anWqZJcc&list=PL0kSdkfSUSi_75tnbq_W2YDqWoJlw5MRW&index=76&t=5s
