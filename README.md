@@ -124,9 +124,35 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``margin: value1 value2 value3 value4;`` -** Value1 is top direction and value4 is left direction. Direction operates in a clockwise system. Values that can be used include px, percentage, cm, mm, in etc.
 - **``padding-direction: value;`` -** Direction can be top, right, left, and bottom. Values that can be used include px, percentage, cm, mm, in etc.
 - **``padding: value;`` -** All directions padding. Values that can be used include px, percentage, cm, mm, in etc.
-
+- **``box-shadow: offset-x offset-y blur-radius spread-radius color;`` -** Used to create a box shadow. Blur-radius and spread-radius are both optional. Acceptable values for everything except color are px, percentage, cm, mm, in etc. As for color its general color names, RGB, hex codes, RGBA, etc.
+- **``transform: scale(value);`` -** Used to scale the size of HTML elements. Value only accepts plain numbers.
+- **``transform: skewX(value);`` -** Used to skew an object horizontally. Value input involves rad, turn, and deg. 
+- **``transform: skewY(value);`` -** Used to skew an object vertically. Value input involves rad, turn, and deg. 
 - **``visibility: hidden;`` -** Hides an element
 - **``display: none;`` -** Hides an element
+- **``display: inline;`` -** Displays an element as an inline element meaning height and width properties will have no effect
+- **``display: block;`` -** Displays an element as a block. It has its own new line and uses up the whole width
+- **``display: contents;`` -** Displays children elements of the direct children of the parent element as if it were also direct children of the parent element
+- **``display: inline-block;`` -** Displays an element as an inline element and a block container. You can still apply height and width values. 
+- **``display: inline-flex;`` -** Displays the element as an inline flex container
+- **``display: inline-grid;`` -** Displays the element as an inline grid container
+- **``display: inline-table;`` -** Displays the element as an inline level table
+- **``display: list-item;`` -** Displays the element as a list element
+- **``display: run-in;`` -** Displays an element as a block or inline. Depends on the context
+- **``display: table;`` -** Displays the element as a table element
+- **``display: table-caption;`` -** Displays the element as a caption element
+- **``display: table-column-group;`` -** Displays the element as a colgroup element
+- **``display: table-header-group;`` -** Displays the element as a thead element
+- **``display: table-footer-group;`` -** Displays the element as a tfoot element
+- **``display: table-row-group;`` -** Displays the element as a tbody element
+- **``display: table-cell;`` -** Displays the element as a td element
+- **``display: table-column;`` -** Displays the element as a col element
+- **``display: table-row;`` -** Displays the element as a tr element
+- **``display: initial;`` -** Default display
+- **``display: inherit;`` -** Inherits the property of the affected element's parent element
+- **``display: flex;`` -** Displays the element as a flex container
+- **``display: grid;`` -** Displays the element as a grid container
+
 
 - **``animation-name: name;`` -** Used to set the name of an animation you are about to make
 - **``animation-duration: time;`` -**  Used to set the duration of the animation you are making. It accepts seconds (s) and milliseconds (ms) as values for time.
@@ -153,7 +179,10 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 ### Useful Codes
 - **``CSS property: value !important;`` -** *!important*, allows a property to override all other properties
 - **``@keyframes animation_name { 0% { CSS Elements } 100% { CSS Elements } }`` -** Used to add the actual animation to an already existing animation name. Multiple change points are allowed (e.g. 50%, 25%, etc)
-- **``CSS property: var(variable_name, value);`` -** Used to create a variable
+- **``CSS property: var(variable_name, value);`` -** Used to create a variable with a value
+- **``--variable_name: value;`` -** Used to place the variable somewhere thats easy to find for viewing/editing purposes
+- **``:root { CSS }`` -** Used to apply CSS elements into the root of the website, which is the HTML element. 
+- **``html_element:hover { CSS }`` -** Used to make an HTML element have unique CSS properties whenever the mouse hovers on top of it
 
 ## Additional Information For HTML and CSS
 - You can put some of the codes within a code, this is called *nesting*. An example is putting *a tags* between or inside of *paragraph tags*
