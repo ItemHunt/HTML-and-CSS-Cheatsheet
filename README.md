@@ -151,7 +151,23 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``display: initial;`` -** Default display
 - **``display: inherit;`` -** Inherits the property of the affected element's parent element
 - **``display: flex;`` -** Displays the element as a flex container
+- **``flex: direction;`` -** Acceptable Direction values include *row-reverse*, *column-reverse*, *row*, or *column*. This code defines the direction or set-up of the flex container
+- **``justify-content: value;`` -** Justifies flexbox container contents. Acceptable values include *center*, *flex-start*, *flex-end*, *space-between*, *space-around*, or *space-evenly*
+- **``align-items: value;`` -** Changes flexbox element postion in the cross axis. Acceptable values include *center*, *flex-start*, *flex-end*, *stretch*, *start*, *end*, or *baseline*
+- **``aign-self: value;`` -** Changes a grid or flex container item's alignment. Acceptable values include *flex-start*, *flex-end*, *center*, *start*, or *end*.
+- **``flex-wrap: value;`` -** *Flex-wrap* specifies whether flexbox elements should wrap together or not. Acceptable values include *nowrap*, *wrap*, or *wrap-reverse*
+- **``flex-shrink: value;`` -** Shrinks flex container elements. Acceptable value includes plain numbers.
+- **``flex-grow: value;`` -** Grows flex container elements. Acceptable value includes plain numbers.
+- **``flex-basis: value;`` -** Sets the initial main size of a flex item. Acceptable value includes plain numbers, auto, px, percentage, cm, mm, in, etc.
+- **``flex: shrink_value grow_value basis_value;`` -** A flex container item resizing code which involves shrink, grow, and basis values separated by spaces.
+- **``order: value;`` -** Used to adjust the order of flex container items. Plain numbers are used for value. 
 - **``display: grid;`` -** Displays the element as a grid container
+- **``grid-template-columns: width1 height1 widthN heightN;`` -** Used to create grid columns. One pair of width and heigth is equivalent to one grid container item. Acceptable values for width and height includes px, percentage, cm, mm, in, etc. 
+- **``grid-template-rows: width1 height1 widthN heightN;`` -** Used to create grid rows. One pair of width and heigth is equivalent to one grid container item. Acceptable values for width and height includes px, percentage, cm, mm, in, etc. 
+- **``grid-column-gap: value;`` -** Used to put a gap between columns. Acceptable values for width and height includes px, percentage, cm, mm, in, etc. 
+- **``grid-row-gap: value;`` -** Used to put a gap between rows. Acceptable values for width and height includes px, percentage, cm, mm, in, etc. 
+- **``grid-gap: row_gap column_gap;`` -** Used to put a gap between both columns and rows. Row and column gap should be replaced with values. Acceptable values for width and height includes px, percentage, cm, mm, in, etc. 
+
 
 
 - **``animation-name: name;`` -** Used to set the name of an animation you are about to make
