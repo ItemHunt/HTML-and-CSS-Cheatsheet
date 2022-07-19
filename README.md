@@ -151,9 +151,9 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``display: initial;`` -** Default display
 - **``display: inherit;`` -** Inherits the property of the affected element's parent element
 - **``display: flex;`` -** Displays the element as a flex container
-- **``flex: direction;`` -** Acceptable Direction values include *row-reverse*, *column-reverse*, *row*, or *column*. This code defines the direction or set-up of the flex container
-- **``justify-content: value;`` -** Justifies flexbox container contents. Acceptable values include *center*, *flex-start*, *flex-end*, *space-between*, *space-around*, or *space-evenly*
-- **``align-items: value;`` -** Changes flexbox element postion in the cross axis. Acceptable values include *center*, *flex-start*, *flex-end*, *stretch*, *start*, *end*, or *baseline*
+- **``flex: direction;`` -** Acceptable Direction values include *row-reverse*, *column-reverse*, *row*, and *column*. This code defines the direction or set-up of the flex container
+- **``justify-content: value;`` -** Justifies flexbox container contents. Acceptable values include *center*, *flex-start*, *flex-end*, *space-between*, *space-around*, and *space-evenly*
+- **``align-items: value;`` -** Changes flexbox element postion in the cross axis. Acceptable values include *center*, *flex-start*, *flex-end*, *stretch*, *start*, *end*, and *baseline*
 - **``aign-self: value;`` -** Changes a grid or flex container item's alignment. Acceptable values include *flex-start*, *flex-end*, *center*, *start*, or *end*.
 - **``flex-wrap: value;`` -** *Flex-wrap* specifies whether flexbox elements should wrap together or not. Acceptable values include *nowrap*, *wrap*, or *wrap-reverse*
 - **``flex-shrink: value;`` -** Shrinks flex container elements. Acceptable value includes plain numbers.
@@ -167,9 +167,19 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``grid-column-gap: value;`` -** Used to put a gap between columns. Acceptable values for width and height includes px, percentage, cm, mm, in, etc. 
 - **``grid-row-gap: value;`` -** Used to put a gap between rows. Acceptable values for width and height includes px, percentage, cm, mm, in, etc. 
 - **``grid-gap: row_gap column_gap;`` -** Used to put a gap between both columns and rows. Row and column gap should be replaced with values. Acceptable values for width and height includes px, percentage, cm, mm, in, etc. 
-
-
-
+- **``grid-column: starting_column / ending-column;`` -** Used to adjust the amount of grid boxes the column will use (or the range of spaces a specific column will use for space). Starting-column and ending column should be replaced with plain number values.
+- **``grid-row: starting_row / ending-row;`` -** Used to adjust the amount of grid boxes the row will use (or the range of spaces a specific row will use for space). Starting-row and ending-row should be replaced with plain number values.
+- **``justify-self: value;`` -** Used to change the horizontal alignment of a grid column or row. Acceptable values include *center*, *stretch*, *start*, and *end*.
+- **``justify-items: value;`` -** Used to change the horizontal alignment of all grid items. Acceptable values include *center*, *stretch*, *start*, and *end*.
+- **``align-self: value;`` -** Used to change the vertical alignment of a grid column or row. Acceptable values include *center*, *stretch*, *start*, and *end*.
+- **``align-items: value;`` -** Used to change the vertical alignment of all grid items. Acceptable values include *center*, *stretch*, *start*, and *end*.
+- **``grid-template-areas: "cell1 name" "cellN name";`` -** Used to name multiple areas or sections of the grid
+- **``grid-area: area;`` -** Used to specify a grid item's size and location. Requires *grid-template-areas*
+- **``grid-area: horizontal_starting_line/vertical_starting line/horizontal_ending_line/vertical_ending_line;`` -** Used to specify a grid item's size and location. Does not require *grid-template-areas*
+- **``grid-template-rows: value1 valueN;;`` -** Used to adjust the height of each grid row. Acceptable values includes px, percentage, cm, mm, in, etc. Instead of adding the values individually per row, you can instead put *repeat(number of repeats, value of height)* right after *grid-template-rows:*. Number of repeats can be *auto-fill* or *auto-fit* instead of just plain numbers. Auto fill fills up the whole container while auto fit collapses empty items and stretches some items to fit the container.
+- **``grid-template-columns: value1 valueN;`` -** Used to adjust the width of each grid column. Acceptable values includes px, percentage, cm, mm, in, etc. Instead of adding the values individually per column, you can instead put *repeat(number of repeats, value of width)* right after *grid-template-columns:*. Number of repeats can be *auto-fill* or *auto-fit* instead of just plain numbers. Auto fill fills up the whole container while auto fit collapses empty items and stretches some items to fit the container.
+- **``grid-template-rows: minmax(min value, max value);`` -** Used to add a mininum height and max height to a single grid row item. You can add multiple minmax separated by spaces
+- **``grid-template-columns: minmax(min value, max value);`` -** Used to add a mininum height and max height to a single grid column item. You can add multiple minmax separated by spaces
 - **``animation-name: name;`` -** Used to set the name of an animation you are about to make
 - **``animation-duration: time;`` -**  Used to set the duration of the animation you are making. It accepts seconds (s) and milliseconds (ms) as values for time.
 - **``animation-fill-mode: forwards;`` -** Used to ensure that the changes the animation made to your element remains permanent even after the animation duration is complete
@@ -199,6 +209,8 @@ I welcome any contributors to this mini-project. Feel free to fork the project a
 - **``--variable_name: value;`` -** Used to place the variable somewhere thats easy to find for viewing/editing purposes
 - **``:root { CSS }`` -** Used to apply CSS elements into the root of the website, which is the HTML element. 
 - **``html_element:hover { CSS }`` -** Used to make an HTML element have unique CSS properties whenever the mouse hovers on top of it
+- **``@media (max-height: value) { Applicable CSS Properties under media quary condition }`` -** *Media quary*, used to apply certain CSS properties when the screen size of the device viewing the website matches the height condition.
+- **``@media (max-width: value) { Applicable CSS Properties under media quary condition }`` -** *Media quary*, used to apply certain CSS properties when the screen size of the device viewing the website matches the width condition.
 
 ## Additional Information For HTML and CSS
 - You can put some of the codes within a code, this is called *nesting*. An example is putting *a tags* between or inside of *paragraph tags*
